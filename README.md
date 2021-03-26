@@ -54,6 +54,7 @@ if(dryRun) {
 					System.out.println(fullPath+":");
 					System.out.println();
 					lineWriter.writeTo(new SystemOutLineWriter());
+					System.out.println();
 					System.out.println("-----------------------------------");
 				}
 			};
@@ -73,4 +74,85 @@ if(dryRun) {
 		}
 	});
 }
+```
+outputs
+```
+-----------------------------------
+my/great/packagename/IStringConverter.java:
+
+package my.great.packagename;
+
+import java.lang.String;
+
+public interface IStringConverter {
+    String intToString(int value);
+    String shortToString(short value);
+    String byteToString(byte value);
+    String floatToString(float value);
+    String doubleToString(double value);
+    String longToString(long value);
+    String charToString(char value);
+    String booleanToString(boolean value);
+}
+-----------------------------------
+-----------------------------------
+my/great/packagename/StringConverter.java:
+
+package my.great.packagename;
+
+import java.lang.String;
+
+public class StringConverter implements IStringConverter {
+
+
+    @Override
+    public String intToString(int value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String shortToString(short value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String byteToString(byte value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String floatToString(float value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String doubleToString(double value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String longToString(long value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String charToString(char value) {
+        return
+        String.valueOf(value);
+    }
+
+    @Override
+    public String booleanToString(boolean value) {
+        return
+        String.valueOf(value);
+    }
+
+}
+-----------------------------------
 ```
