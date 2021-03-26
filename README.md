@@ -29,7 +29,7 @@ StringConverterImpl.define(new ISClassDefinition() {
 				.makeOverride()
 				.addParameter(primitive, "value")
 				.setBody(SCode.code()
-					.println("return ").type(String.class).println(".valueOf(value);")
+					.print("return ").type(String.class).println(".valueOf(value);")
 				);
 		}
 	}
@@ -78,6 +78,7 @@ if(dryRun) {
 outputs
 ```
 -----------------------------------
+-----------------------------------
 my/great/packagename/IStringConverter.java:
 
 package my.great.packagename;
@@ -107,50 +108,42 @@ public class StringConverter implements IStringConverter {
 
     @Override
     public String intToString(int value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String shortToString(short value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String byteToString(byte value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String floatToString(float value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String doubleToString(double value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String longToString(long value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String charToString(char value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
     @Override
     public String booleanToString(boolean value) {
-        return
-        String.valueOf(value);
+        return String.valueOf(value);
     }
 
 }
