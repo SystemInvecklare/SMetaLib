@@ -5,4 +5,5 @@ public interface ISFieldConstruction {
 	void initialValue(SCode expression);
 	ISFieldConstruction makeFinal();
 	ISFieldConstruction makePrivate();
+	ISFieldConstruction makePublic();
 }

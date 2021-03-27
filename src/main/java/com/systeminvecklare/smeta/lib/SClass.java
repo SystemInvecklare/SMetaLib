@@ -157,6 +157,12 @@ public abstract class SClass implements ISClass {
 							field.accessLevel = 0;
 							return this;
 						}
+						
+						@Override
+						public ISFieldConstruction makePublic() {
+							field.accessLevel = 3;
+							return this;
+						}
 					};
 				}
 
